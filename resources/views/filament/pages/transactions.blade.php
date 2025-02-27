@@ -1,5 +1,5 @@
 <x-filament-panels::page>
-@vite('resources/css/app.css')
+@vite('resources/js/app.js')
 @php
     $card2 = [
     'bg-gradient-to-r from-[#2D60FF] to-[#539BFF]',
@@ -101,7 +101,7 @@
         <nav class="flex items-center space-x-2">
           <!-- Previous Button -->
           <button class="px-3 py-2 text-[#1814F3] text-base flex items-center space-x-2">
-            <img src="/card/back.png" class="w-[12px] h-[10px]" alt="next">
+            <img src="/svg/back.svg" class="w-[14px] h-[14px]" alt="next">
             <p>Previous</p>
           </button>
 
@@ -117,13 +117,13 @@
 
           <!-- Next Button -->
           <button class="px-3 py-2 text-[#1814F3] text-base flex items-center space-x-2">
-            <p>Next</p> <img src="/card/next.png" class="w-[12px] h-[10px]" alt="next">
+            <p>Next</p> <img src="/svg/next.svg" class="w-[14px] h-[14px]" alt="next">
           </button>
         </nav>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-      
+        document.title = "Transactions";
         document.addEventListener("DOMContentLoaded", function () {
             const ctx = document.getElementById('expense').getContext('2d');
             new Chart(ctx, {
@@ -145,6 +145,7 @@
             });
         });
     </script>
+    
     </div>
     
 </x-filament-panels::page>

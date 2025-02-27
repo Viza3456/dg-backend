@@ -18,7 +18,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Facades\Filament;
-
+use Filament\Support\Assets\Js;
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -31,18 +31,14 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
             ->login()
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->brandName('My Admin Panel') // This sets the default title
-            // ->renderHook('panels::topbar.start', function () {
-            //     return '<h1 class="text-lg font-bold text-gray-700">My Admin Panel</h1>';
-            // })
-            
-
-            
+            ->viteTheme('resources/css/app.css')
+            ->assets([
+                Js::make('app-js', 'resources/js/app.js')
+            ])
             ->brandLogo(asset('/images/logo.png'))
             ->brandLogoHeight('35px')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

@@ -1,5 +1,5 @@
 <x-filament-panels::page>
-@vite('resources/css/app.css')
+@vite('resources/js/app.js')
 @php
     $card1 = [
         'bg-gradient-to-r from-[#4C49ED] to-[#0A06F4]',
@@ -120,6 +120,7 @@
       </div>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script>
+        document.title = "Dashboard";
           document.addEventListener("DOMContentLoaded", function () {
               const chartCanvas = document.getElementById('salesChart');
 
@@ -231,7 +232,6 @@
           });
 
       </script>
-
       <script>
           document.addEventListener("DOMContentLoaded", function () {
               const chartCanvas = document.getElementById('expense');

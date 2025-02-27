@@ -3,29 +3,151 @@
 @tailwind utilities;
 @tailwind variants;
 
-aside{
-    width: 250px !important;
-    background: white;
-}
-.fi-sidebar-nav{
-    background: white;
-    width: 250px !important;
-}
 body{
     background: #F5F7FA !important;
 }
 
-.fi-sidebar-item .fi-sidebar-item-label{
-    color: #B1B1B1;
-    font-size: 18px;
+.fi-sidebar-item{
+  display: flex !important;
+  flex-flow: nowrap;
+}
+.fi-sidebar-item div{
+  width: 100%;
+}
+
+.fi-sidebar-item-button{
+  width: 100%;
+  background: none !important;
+  display: flex;
+  justify-items: center;
+  height: 50px;
+  padding-left: 24px;
+}
+
+/* Hover effect for the label */
+.fi-sidebar-item-button:hover .fi-sidebar-item-label {
+  font-size: 19px !important;
+  transition: font-size 0.4s ease; /* Adding transition */
+}
+
+/* Hover effect for the icon */
+.fi-sidebar-item{
+  display: flex !important;
+  flex-flow: nowrap;
+}
+.fi-sidebar-item div{
+  width: 100%;
+}
+
+.fi-sidebar-item-button{
+  width: 100%;
+  background: none !important;
+  display: flex;
+  justify-items: center;
+  height: 50px;
+  padding-left: 24px;
+}
+
+/* Hover effect for the label */
+.fi-sidebar-item-button:hover .fi-sidebar-item-label {
+  font-size: 19px !important;
+  transition: font-size 0.4s ease; /* Adding transition */
+}
+
+/* Hover effect for the icon */
+.fi-sidebar-item-button:hover .fi-sidebar-item-icon {
+  width: 25px;
+  height: 25px;
+  transition: width 0.4s ease, height 0.4s ease; /* Adding transition for width and height */
+}
+
+.fi-sidebar-item-label{
+  font-size: 18px;
+}
+.fi-sidebar-item-active .fi-sidebar-item-label{
+  color: blue !important;
+}
+.fi-sidebar-item-active .fi-sidebar-item-icon{
+  color: blue !important;
+}
+aside{ width: 250px; }
+
+.fi-sidebar-item{
+  display: flex !important;
+  flex-flow: nowrap;
+}
+.fi-sidebar-item div{
+  width: 100%;
+}
+
+.fi-sidebar-item-button{
+  width: 100%;
+  background: none !important;
+  display: flex;
+  justify-items: center;
+  height: 50px;
+  padding-left: 24px;
+}
+
+/* Hover effect for the label */
+.fi-sidebar-item-button:hover .fi-sidebar-item-label {
+  font-size: 19px !important;
+  transition: font-size 0.4s ease; /* Adding transition */
+}
+
+/* Hover effect for the icon */
+.fi-sidebar-item-button:hover .fi-sidebar-item-icon {
+  width: 26px;
+  height: 26px;
+  transition: width 0.4s ease, height 0.4s ease; /* Adding transition for width and height */
+}
+
+.fi-sidebar-item-label{
+  font-size: 18px;
+}
+.fi-sidebar-item-active .fi-sidebar-item-label{
+  color: blue !important;
+}
+.fi-sidebar-item-active .fi-sidebar-item-icon{
+  color: blue !important;
+}
+
+.fi-sidebar-item-icon{
+  width: 25px;
+  height: 25px;
+}
+aside{
+  width: 250px !important;
+}
+
+.fi-sidebar-item-label{
+  font-size: 18px;
+  color: #B1B1B1;
 }
 
 .fi-sidebar-item-active .fi-sidebar-item-label{
-    color: #2D60FF !important;
+  color: blue !important;
 }
 .fi-sidebar-item-active .fi-sidebar-item-icon{
-    color: #2D60FF !important;
+  color: blue !important;
 }
-.fi-sidebar-item-button{
-    background: none !important;
+
+.fi-sidebar-nav{
+  width: 250px;
+  background: white;
+  padding-left: 9px;
+}
+.fi-topbar nav{
+  height: 100px !important;
+}
+header{
+  height: 100px !important;
+}
+.fi-avatar{
+  width: 50px;
+  height: 50px;
+}
+
+.fi-dropdown-panel{
+  z-index: 999;
 }

@@ -1,5 +1,5 @@
 <x-filament-panels::page>
-@vite('resources/css/app.css')
+@vite('resources/js/app.js')
 @php
     $bgRecord = [
         'bg-[#E7EDFF]',
@@ -162,6 +162,7 @@
       </div>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script>
+          document.title = "CreditCards";
           document.addEventListener("DOMContentLoaded", function () {
               const chartCanvas = document.getElementById('expense');
 
