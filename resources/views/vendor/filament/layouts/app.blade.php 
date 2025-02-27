@@ -1,0 +1,30 @@
+<!-- resources/views/vendor/filament/layouts/app.blade.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config('app.name') }}</title>
+    @filamentStyles
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Other sidebar content -->
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Custom Navbar Title -->
+        <header class="bg-blue-600 p-4 text-white">
+            <h1>{{ $customNavbarTitle }}</h1>  <!-- Display the custom navbar title here -->
+        </header>
+
+        @yield('content')
+    </div>
+
+    @filamentScripts
+</body>
+</html>

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+aside{
+    width: 250px !important;
+    background: white;
+}
+.fi-sidebar-nav{
+    background: white;
+    width: 250px !important;
+}
+body{
+    background: #F5F7FA !important;
+}
+
+.fi-sidebar-item .fi-sidebar-item-label{
+    color: #B1B1B1;
+    font-size: 18px;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-label{
+    color: #2D60FF !important;
+}
+.fi-sidebar-item-active .fi-sidebar-item-icon{
+    color: #2D60FF !important;
+}
+.fi-sidebar-item-button{
+    background: none !important;
+}
