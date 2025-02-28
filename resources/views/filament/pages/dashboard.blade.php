@@ -1,5 +1,4 @@
 <x-filament-panels::page>
-@vite('resources/js/app.js')
 @php
     $card1 = [
         'bg-gradient-to-r from-[#4C49ED] to-[#0A06F4]',

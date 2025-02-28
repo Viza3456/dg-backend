@@ -1,5 +1,4 @@
 <x-filament-panels::page>
-@vite('resources/js/app.js')
 @php
     $bgRecord = [
         'bg-[#E7EDFF]',
