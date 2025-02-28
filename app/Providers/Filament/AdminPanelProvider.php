@@ -36,9 +36,6 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->viteTheme('resources/css/app.css')
-            ->assets([
-                Js::make('app-js', 'resources/js/app.js')
-            ])
             ->brandLogo(asset('/images/logo.png'))
             ->brandLogoHeight('35px')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
